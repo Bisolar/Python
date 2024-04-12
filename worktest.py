@@ -236,3 +236,5 @@
 # else:
 #     print("Not a Leap year")
 
+for x in range (3):
+    print(x)
