@@ -24,8 +24,8 @@ if response == "1" or response == "pepsi":
             print("Please enter a valid payment")
     elif reply2 == "2" or reply2 == "card":
         print("Please enter your card details:")
-        card_number = input("Card number: ")      #limit card number to 16 digits
-        expiry_date = input("Expiry date (MM/YY): ")
+        card_number = int(input("Card number: "))     #limit card number to 16 digits
+        expiry_date = int(input("Expiry date (MM/YY): "))
         cvv = input("CVV: ")                       #limit CVV to three digits
         print("Your Payment is Successful!\nThank you for Shopping with us!")
     else:
@@ -48,8 +48,8 @@ elif response == "2" or response == "mirinda":
             print("Please enter a valid payment")
     elif reply2 == "2" or reply2 == "card":
         print("Please enter your card details:")
-        card_number = input("Card number: ")      #limit card number to 16 digits
-        expiry_date = input("Expiry date (MM/YY): ")
+        card_number = int(input("Card number: "))      #limit card number to 16 digits
+        expiry_date = int(input("Expiry date (MM/YY): "))
         cvv = input("CVV: ")                       #limit CVV to three digits
         print("Your Payment is Successful!\nThank you for Shopping with us!")
     else:
