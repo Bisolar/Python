@@ -29,15 +29,15 @@ while True:
         else:
             break
 
-"""Nested loop"""
-integer = list(range(5, 10))
+# """Nested loop"""
+# integer = list(range(5, 10))
 
-print("Virtual score result")
-for i in integer:
-    for x in integer:
-        print(f'Team1 {i} - {x} Team2')
+# print("Virtual score result")
+# for i in integer:
+#     for x in integer:
+#         print(f'Team1 {i} - {x} Team2')
 
-"""For loop & nested loop"""
-a = range(10)
-for x in a:
-    print(x)
+# """For loop & nested loop"""
+# a = range(10)
+# for x in a:
+#     print(x)
