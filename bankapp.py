@@ -69,3 +69,4 @@ while True:
         break
     else:
         print("Invalid choice, please try again.")
+        break
