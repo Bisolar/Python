@@ -35,4 +35,5 @@ def main():
         print("Done and debited")
 
 
+# Optimise the cost and hanlde the joint error
 
