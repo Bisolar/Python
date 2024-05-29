@@ -1,3 +1,22 @@
+# def add_numbers(a, b):
+#     c = a + b
+#     return c
+
+# a = 5
+# b = 6
+# c = add_numbers(a, b)
+# print("The sum is ", c)
+
+# def multipy_numbers(a, b):
+#     c = a * b
+#     return c
+
+# a = 10
+# b = 11
+# c = multipy_numbers(a, b)
+# print ("The product is", c)
+    
+
 # Exercise 1: Addition Function
 # Write a function called add_numbers that takes two parameters a and b and returns their sum.
 # define a function for adding numbers
