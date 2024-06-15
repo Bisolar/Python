@@ -18,13 +18,12 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS studentform(
                first_name TEXT,
                last_name TEXT,
                email TEXT,
-               address,
+               address TEXT,
                place_of_birth TEXT,
                state_of_origin TEXT,
                nationality TEXT,
-               phone_number TEXT NOT NULL,
-               NIN TEXT NOT NULL
-               CHECK (LENGTH(phone_number) <= 11))''')
+               phone_number TEXT CHECK (LENGTH(phone_number) <= 11),
+               NIN TEXT CHECK (LENGTH(NIN) <= 11))''')
 
 cursor.execute("INSERT INTO studentform(first_name, last_name, email, address, place_of_birth, state_of_origin, nationality, phone_number, nin) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", (first_name, last_name, email, address, place_of_birth, state_of_origin, nationality, phone_number, nin))
 

@@ -19,17 +19,17 @@ cursor = connect.cursor()
 # print(f"{first_name}, {last_name} your {course} has been registered")
 # cursor.execute("INSERT INTO student (first_name, last_name, course) VALUES(?, ?, ?)", (first_name, last_name, course))
 
-data = cursor.execute("SELECT * FROM student")
+# data = cursor.execute("SELECT * FROM student")
 
-for i in data:
-    for a in i:
-        print(a)
+# for i in data:
+#     for a in i:
+#         print(a)
+
+# cursor.execute(("UPDATE student SET last_name = ?, course = ?, WHEE id = 4"), (first_name, last_name, course))
+# cursor.execute(("DELETE FROM student WHERE id = ?"), (2,))
+data = cursor.execute(("SELECT * FROM student WHERE id = ?"), (3,)).fetchall()
 
 connect.commit()
 connect.close()
 
 
-# Assignment 
-# create student form, collect phone number (only 11 digits), first name, last name, email, Address, 
-# Place of birth, State of origin,NIN (11 dgits)
-# Nationality and add it to a database
